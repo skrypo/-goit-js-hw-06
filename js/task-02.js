@@ -7,13 +7,24 @@ const ingredients = [
   "Condiments",
 ];
 
+// const ingredientsList = document.getElementById("ingredients");
+
+// ingredients.forEach(function (element) {
+//   const ingredientsItem = document.createElement("li");
+//   ingredientsItem.classList = "item";
+//   ingredientsItem.textContent = element;
+//   ingredientsList.append(ingredientsItem);
+// });
+
+// console.log(ingredientsList);
+
 const ingredientsList = document.getElementById("ingredients");
+let liElements = "";
 
 ingredients.forEach(function (element) {
-  const ingredientsItem = document.createElement("li");
-  ingredientsList.append(ingredientsItem);
-  ingredientsItem.textContent = element;
-  ingredientsItem.classList = "item";
+  liElements += `<li class="item">${element}</li>`;
 });
+
+ingredientsList.innerHTML = liElements;
 
 console.log(ingredientsList);

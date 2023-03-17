@@ -10,5 +10,5 @@ qtyCat.forEach(function (element) {
   const subCat = element.lastElementChild;
 
   const subcatArr = Object.values(subCat.children);
-  console.log(subcatArr.length);
+  console.log("Elements :", subcatArr.length);
 });
